@@ -9,6 +9,15 @@
   $mail->CharSet = 'UTF-8';
   $mail->setLanguage('ru','phpmailer/language');
   $mail->isHTML(true);
+  
+  $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
+  $mail->isSMTP();                                            
+  $mail->Host       = 'smtp.example.com';                     
+  $mail->SMTPAuth   = true;                                   
+  $mail->Username   = 'gribovskijvladimir0@gmail.com';                     
+  $mail->Password   = '07022002277877Ner0ny';                               
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;    
+  $mail->Port       = 465;  
 
 
   $mail->setFrom('gribovskijvladimir0@gmail.com','От меня');
